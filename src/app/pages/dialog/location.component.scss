@@ -1,0 +1,48 @@
+.searchContainer {
+    position: relative;
+}
+
+.search {
+    position: absolute;
+    left: 10px;
+    color: #ccc;
+}
+
+.searchBox {
+    padding-left: 50px;
+    border: 1px solid rgb(238, 238, 238);
+    outline: none;
+    height: 50px;
+    border-radius: 4px;
+    cursor: auto;
+}
+
+.images {
+    // display: inline-block;
+    cursor: pointer;
+
+}
+
+.viewAll {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.location {
+    width: 800px;
+}
+
+.star {
+    background-color: white;
+}
+
+.starDialog {
+    // transition: opacity 1s ease-out, transform 5s ease-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    cdk-overlay-pane{
+        // max-width: 80rem !important;
+    }
+}

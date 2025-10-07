@@ -1,0 +1,145 @@
+// * {
+//     // font-size: 14px;
+//     // overflow: hidden;
+//     // overflow: hidden;
+//     // width: 100%;
+
+// }
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header1 {
+    // display: flex;
+    // gap: 5%;
+    // margin-left: 18%;
+    cursor: pointer;
+}
+
+
+img {
+    width: 134px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.searchContainer {
+    // display: flex;
+    // align-items: center;
+    position: relative;
+}
+
+.searchBox {
+    padding-left: 50px;
+    border: 1px solid rgb(238, 238, 238);
+    outline: none;
+    height: 35px;
+    border-radius: 4px;
+    width: 550px;
+    cursor: auto;
+    font-size: 14px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    color: #ccc;
+    bottom: 27px;
+}
+
+//         }
+
+//         .searchBox::placeholder {
+//             text-align: center;
+//         }
+//     }
+
+.header2 {
+    display: flex;
+    align-items: center;
+    // margin-left: 15%;
+    // gap: 17%;
+    cursor: pointer;
+}
+
+
+.location {
+    display: flex;
+    // gap: 20%;
+    // align-items: center;
+}
+
+.signIn {
+    background-color: rgb(248, 68, 100) !important;
+    color: white;
+    border-radius: 4px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.logIn {
+    background-color: #0b57d0;
+    color: white;
+    border-radius: 4px;
+    height: 25px;
+    line-height: 25px;
+}
+
+//     }
+// }
+
+.subHeader {
+    // display: flex;
+    background-color: whitesmoke;
+    // height: 40px;
+    // align-items: center;
+    // gap: 5%;
+    // justify-content: center;
+
+}
+
+.contents {
+    padding: 20px 20px 20px 0;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    // padding: 0px 10px;
+    cursor: pointer;
+
+}
+
+// .list1,
+// .list2 {
+//     display: flex;
+//     // margin-left: 20%;
+// }
+
+@media only screen and (max-width: 1000px) {
+
+    //     .headerContainer {
+    //         display: flex;
+    //         flex-direction: column;
+    //         width: 60%;
+    //         margin: auto;
+    .appContainer {
+        // width: 92vw;
+        // max-width: 1240px;
+        width: 80rem;
+        // background-color: aliceblue;
+
+    }
+
+    //         .header2 {
+    //             display: flex;
+    //             align-items: center;
+    //             gap: 10%;
+    //             justify-content: end;
+    //         }
+    //     }
+}

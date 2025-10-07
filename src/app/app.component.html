@@ -1,0 +1,57 @@
+<div *ngIf="closeNav" class="container-fluid appContainer">
+  <div class="container p-0">
+    <div class="headerContainer ">
+      <div class=" p-0 header1 d-flex align-items-center ">
+        <img class="p-3" src="../assets/images/logo.png" alt="" routerLink="/">
+        <div class="searchContainer p-3">
+          <mat-icon class="searchIcon p-3">search</mat-icon>
+          <span><input type="text" class="searchBox " placeholder="search for movies"> </span>
+        </div>
+      </div>
+
+      <div class="  gap-3 header2  ">
+        <div class="location" (click)="setLocation()">
+          <span>{{currentLocation}}</span>
+          <span>
+            <mat-icon>keyboard_arrow_down</mat-icon>
+          </span>
+        </div>
+        <button mat-flat-button class="signIn">Sign in</button>
+        <div class="d-flex">
+          <mat-icon *ngIf="!openSideNav, else sidenav" (click)="sideNav()">menu</mat-icon>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="subHeader">
+    <div class="container align-items-center text-center p-3">
+      <div class="headerContainer">
+        <div class=" p-0 d-flex   ">
+          <a class="p-3">Movies</a>
+          <a class="p-3 ">Stream</a>
+          <a class="p-3 ">Events</a>
+          <a class="p-3 ">Plays</a>
+          <a class="p-3 ">Sports</a>
+          <a class="p-3 ">Activities</a>
+        </div>
+        <div class=" p-0 justify-content-end d-flex  ">
+          <a class="p-3 ">ListYourShow</a>
+          <a class="p-3 ">Corporates</a>
+          <a class="p-3 ">Offers</a>
+          <a class="p-3 ">Giftcards</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+
+<ng-template #sidenav>
+</ng-template>
+
+<!-- <button (click)="setItem()">submit</button> -->

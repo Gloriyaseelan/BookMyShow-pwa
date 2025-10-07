@@ -1,0 +1,56 @@
+.wholeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 900px;
+}
+
+.seatContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.seat:hover {
+    // background: #f84464;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+button {
+    color: #fff;
+    background-color: #f84464;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .cdk-overlay-pane {
+        max-width: 800px !important;
+        // background-color: #f84464;
+    }
+}

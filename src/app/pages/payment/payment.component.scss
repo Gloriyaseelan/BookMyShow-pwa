@@ -1,0 +1,136 @@
+.rowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrowContainer {
+    display: flex;
+    gap: 20px;
+
+}
+
+.seatNavContainer {
+    padding: 10px;
+}
+
+.arrow {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.closeIcon {
+    width: 40px;
+}
+
+.ticketContainer {
+    padding: 2%;
+    background: #f2f2f2;
+    height: 90%;
+}
+
+.ticket {
+    background: white;
+    padding: 5%;
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+.ticketAmount {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-size: 14px;
+    }
+
+}
+
+h2 {
+    color: #c02c39;
+    font-size: 14px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.feesContainer {
+    padding-top: 20px;
+}
+
+.gst {
+    font-size: 10px;
+    color: #969696;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.Convenience {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.state {
+    font-size: 12px;
+    color: #666;
+    margin-top: 50px;
+
+    span {
+        color: #dc3558;
+        cursor: pointer;
+    }
+}
+
+.pay {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    background: lightyellow;
+    font-weight: 500;
+}
+
+.notes {
+    padding: 2% 5%;
+    font-size: 12px;
+    align-items: center;
+    color: #404040;
+}
+
+button {
+    background: #f84464;
+    color: #fff;
+    border-radius: 8px;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .16);
+
+}
+
+.proceed {
+    padding: 8px 0px;
+}
+
+.cancel {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .seatNavContainer {}
+}

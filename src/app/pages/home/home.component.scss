@@ -1,0 +1,258 @@
+// * {
+//     mat-card {
+//         height: auto;
+//         min-height: 100px;
+//         padding: 0%;
+//     }
+
+.wrap {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 3%;
+    padding: 0px;
+    display: inline-block;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+// }
+
+.carouselContainer {
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    overflow: hidden;
+
+    .carouselTrack {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 2%;
+
+
+        img {
+            border-radius: 10px;
+            // width: 500px;
+        }
+    }
+}
+
+
+// .bodyContainer {
+//     // padding: 2%;
+
+.recomand {
+    // display: flex;
+    // flex-direction: column;
+    // margin-left: 15%;
+    font-size: 24px;
+    // width: 70%;
+    // margin: auto;
+}
+
+.movies {
+    // display: flex;
+    // gap: 3%;
+    // flex-wrap: wrap;
+    // row-gap: 20px;
+}
+
+//         img {
+//             border-radius: 4px;
+//             cursor: pointer;
+//         }
+//     }
+
+.stream {
+    margin: 20px 0px;
+}
+
+.premiereContainer {
+    // display: flex;
+    // flex-direction: column;
+    background-color: rgb(43, 49, 72);
+    color: white;
+    font-size: 14px;
+    // padding: 1% 0 1% 0;
+}
+
+.head1 {
+    // margin: auto;
+    // width: 70%;
+}
+
+//             h2 {
+//                 margin-bottom: 5px;
+//             }
+//         }
+
+.premiere {
+    // display: flex;
+    // justify-content: space-between;
+    // margin: auto;
+    // width: 70%;
+    // gap: 5%;
+}
+
+img {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.streamImg {
+    // width: 95%;
+}
+
+.recImage {
+    width: 200px;
+    // height: 378px;
+}
+
+//         }
+//     }
+// }
+.footerContainer {
+    background-color: rgb(49, 48, 53);
+}
+
+.contact {
+
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        display: flex;
+        gap: 40px;
+
+        .list {
+            font-weight: 600;
+        }
+    }
+
+    a {
+        flex: 0 0 auto;
+        background-color: rgb(236, 94, 113);
+        border-radius: 3px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.contactBackground {
+    background: rgb(64, 64, 67);
+    padding: 4%;
+
+    .contactContainer {
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+
+        svg {
+            fill: rgb(198, 198, 199);
+        }
+
+        svg:hover {
+            fill: white
+        }
+
+        a {
+            color: #c6c6c7;
+            text-align: inherit;
+            line-height: 18px;
+            width: auto;
+            flex-basis: auto;
+            margin-top: 10px;
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+
+    div {
+        flex: 1 1 0%;
+        height: 1px;
+        background: rgb(93, 93, 95);
+    }
+
+    svg {
+        enable-background: new -153 -46 652 652;
+        height: 100px;
+
+        .st2 {
+            fill: white;
+        }
+
+        .st0 {
+            fill: #D70B17;
+        }
+
+        .st1 {
+            fill: #FFFFFF;
+        }
+    }
+}
+
+.others {
+    display: flex;
+    justify-content: center;
+
+    a {
+        width: 37px;
+        height: 37px;
+        margin-left: 10px;
+    }
+
+    svg {
+        fill: rgb(93, 93, 95);
+    }
+}
+
+.copyRight {
+    color: rgb(102, 102, 102);
+    font-size: 9px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .premiereContainer {
+        // width: 80rem;
+        // background-color: aliceblue;
+    }
+
+    .wholeBody {
+        // @media only screen and (max-width: 1000px) {
+        width: 80rem;
+
+    }
+}
+
+// @media (min-width: 1024px) {
+//     .dOuCBq {
+//         margin: 0px auto;
+//         width: 92vw;
+//         max-width: 1240px;
+//     }

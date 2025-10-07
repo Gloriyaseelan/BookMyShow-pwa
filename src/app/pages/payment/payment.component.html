@@ -1,0 +1,87 @@
+<div *ngFor="let data of movieDetails">
+    <div class="container seatNavContainer" *ngFor="let theatre of data.theatre">
+        <div class=" rowContainer">
+            <div class="arrowContainer">
+                <div class="">
+                    <img class="arrow  p-0" (click)="goBack()" src="../../../assets/images/left-arrow-svgrepo-com.svg"
+                        alt="">
+                </div>
+                <div class="" style="margin-left: 20px;">
+                    <div>{{data.title}}</div>
+                    <div>{{theatre.tName}}</div>
+                </div>
+            </div>
+            <div class="editor ">
+                <div class="row align-items-center">
+                    <img class=" closeIcon" src="../../../assets/images/close.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid ticketContainer">
+    <div class="container booking">
+        <div class="row">
+            <div class="col">
+                <img src="../../../assets/images/payment.png" alt="">
+            </div>
+            <div class=" col">
+                <div class="row">
+                    <div class="col">
+                        <div class="ticket">
+                            <h2>BOOKING SUMMARY</h2>
+                            <div class="ticketAmount">
+                                <span>{{seatDetails}} ({{totalSeat}} Tickets)</span>
+                                <span>RS.{{amount}}</span>
+                            </div>
+                            <div class="feesContainer">
+                                <div class="Convenience">
+                                    <div>
+                                        <img *ngIf="down" src="../../../assets/images/downArrow.svg"
+                                            (click)="downArrow()" alt="">
+                                        <img *ngIf="!down" src="../../../assets/images/upArrow.svg" (click)="upArrow()"
+                                            alt="">
+                                        <span>Convenience fees</span>
+                                    </div>
+                                    <span>RS.{{convenience}}</span>
+                                </div>
+                                <div class="gst" *ngIf="showDiv">
+                                    <div>
+                                        <span>Base amount</span>
+                                        <span>Rs.{{baseAmt}}</span>
+                                    </div>
+                                    <div>
+                                        <span>Integrated GST (IGST) @ 18%</span>
+                                        <span>Rs.{{gst.toFixed(2)}}</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="total">
+                                    <span>Sub total</span>
+                                    <span>RS.{{subTotal}}</span>
+                                </div>
+                                <div class="state">
+                                    <p>Your current state is <span>Tamil Nadu</span></p>
+                                </div>
+                                <div class="pay">
+                                    <span>Amount Payable</span>
+                                    <span>RS.{{subTotal}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row notes">
+                    <p class="m-0">By proceeding, I express my consent to complete this transaction.</p>
+                </div>
+                <div class="row proceed">
+                    <button mat-raised-button>Proceed</button>
+                </div>
+                <div class="row cancel">
+                    You can cancel the tickets 4 hour(s) before the show. Refunds will be done according to Cancellation
+                    Policy
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

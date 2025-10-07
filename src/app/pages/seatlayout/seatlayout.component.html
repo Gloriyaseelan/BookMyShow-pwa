@@ -1,0 +1,54 @@
+<div *ngFor="let data of movieDetails">
+    <div class="seatNavContainer" *ngFor="let theatre of data.theatre">
+        <div class=" rowContainer">
+            <div class="movieName">
+                <div class="">
+                    <img class="arrow  p-0" (click)="goBack()" src="../../../assets/images/left-arrow-svgrepo-com.svg"
+                        alt="">
+                </div>
+                <div class="" style="margin-left: 20px;">
+                    <div>{{data.title}}</div>
+                    <div>{{theatre.tName}}</div>
+                </div>
+            </div>
+            <div class="editor">
+                <button class=" ticketButton" mat-flat-button (click)="openDialog()">{{totalSeat}} Tickets
+                    <img class="editIcon" src="../../../assets/images/edit.png" alt=""></button>
+                <img class=" closeIcon" src="../../../assets/images/close.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class=" timer" >
+        <!-- <div class="container"> -->
+            <div class="timeContainer " *ngFor="let theatre of data.theatre">
+                <div *ngFor="let time of theatre.timings">
+                    <div>{{time}}</div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</div>
+
+<div class="container wholeContains" *ngIf="closeSeats">
+    <div class="seatLayout row" *ngFor="let data of seatDetails">
+        <div class="col-1 text-center">{{data.sName}}</div>
+        <div class="col">
+            <div class="row ">
+                <div class="seatContainer col-2" *ngFor="let seat of data.availableSeats, let i=index"
+                    [ngStyle]="{'background-color': seat.status ? '#1ea83c' : ''}" (click)="select(seat.seatId)">
+                    <a class="seat " [ngStyle]="{'color':seat.status ? 'white':''}">{{i+1}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="buttonContainer" *ngIf="payment && closeSeats">
+    <button class="amtButton" (click)="toPay()">Pay Rs.{{amount}}</button>
+</div>
+
+
+
+
+<!-- [ngClass]="{ 'disabled': !seat.status }" -->
+<!-- [ngStyle]="{'background-color': selected ? '#1ea83c' : ''}" -->
+<!-- [ngStyle]="{'color':selected? 'white':'#1ea83c'}" -->

@@ -1,0 +1,41 @@
+<div class="wholeContainer">
+    <div>{{seatArr.title}}</div>
+    <div class="seatContainer">
+        <div *ngFor="let seat of seatArr.seats; let i = index" [ngStyle]="{'background':seat ? '#f84464' : ''}"
+            class="seat" (click)="selectSeat(i)">
+            <div>{{ i + 1 }}</div>
+        </div>
+    </div>
+    <hr>
+    <div class="amount">
+        <div class="" *ngFor="let amount of seatArr.amount; let i = index">
+            <p>{{amount.name}}</p>
+            <p><b>RS.{{amount.amount}}</b></p>
+        </div>
+    </div>
+    <button mat-flat-button class="" (click)="submit()">Select Seat</button>
+</div>
+
+<!-- <div class="container ">
+    <div class=" wholeContainer">
+
+        <div class="row">How Many Seats ?</div>
+        <div class="row seatContainer">
+            <div *ngFor="let seat of seats; let i = index" class="col seat">
+                <span>{{ i + 1 }}</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row amount">
+            <div class="col">
+                <p>VIP Box</p>
+                <p><b>RS.200</b></p>
+            </div>
+            <div class="col">
+                <p>Silver Class</p>
+                <p><b>RS.150</b></p>
+            </div>
+        </div>
+        <button mat-flat-button class="row">Select Seat</button>
+    </div>
+</div> -->

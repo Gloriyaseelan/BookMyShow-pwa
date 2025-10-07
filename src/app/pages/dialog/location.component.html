@@ -1,0 +1,37 @@
+<div *ngIf="!show" class="container location">
+    <div class="row searchContainer">
+        <mat-icon class="p-3 search">search</mat-icon>
+        <span><input type="text" class=" searchBox w-100" [(ngModel)]="searchItem" (input)="filterLocation($event)"
+                placeholder="search for your city"></span>
+    </div>
+    <hr>
+    <p class="text-center">Popular cities</p>
+    <div class="row d-flex align-items-center justify-content-center ">
+        <ng-container *ngFor="let data of locations">
+            <div class="col ">
+                <img class='images' (click)="setLocation(data.title)" src={{data.src}} alt='' />
+                <p style="margin-left: 10px;">{{data.title}}</p>
+            </div>
+        </ng-container>
+    </div>
+    <div *ngIf="viewAll; else otherCities" class="container text-center">
+        <span class="viewAll" (click)="viewAllCountries()">View All Cities</span>
+    </div>
+</div>
+
+<div *ngIf="show" class="starDialog container">
+    <div class="">
+        <mat-icon *ngFor="let star of stars, let i=index" [ngStyle]="{'color' : star ? 'red' : 'black' }"
+            (click)="selectStar(i)" class="star ">star</mat-icon>
+    </div>
+</div>
+
+<ng-template #otherCities>
+    <div class="container text-center">
+        <span>Other Cities</span>
+    </div>
+    <div class="container text-center">
+        <span class="viewAll" (click)="hideAllCities()">Hide All Cities</span>
+    </div>
+
+</ng-template>

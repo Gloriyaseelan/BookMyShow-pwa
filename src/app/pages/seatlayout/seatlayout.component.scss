@@ -1,0 +1,175 @@
+.seatLayout {
+    margin-bottom: 10px;
+}
+
+.movieName {
+    display: flex;
+    align-items: center;
+}
+
+
+.wholeContains {
+    padding: 3%;
+}
+
+.seatContainer {
+    margin: 4px;
+    float: left;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #1ea83c;
+    cursor: pointer;
+}
+
+.ticketButton {
+    width: 100px;
+    border: 1px solid;
+}
+
+
+.seat {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    border-radius: 2px;
+    color: #1ea83c;
+    text-decoration: none;
+}
+
+.seat:hover {
+    color: white;
+}
+
+.seatContainer:hover {
+    background-color: #1ea83c;
+}
+
+.disabled {
+    pointer-events: none;
+    border: none;
+    background: #eee !important;
+}
+
+.seatContainer:nth-child(4) {
+    margin-right: 100px;
+}
+
+.seatContainer:nth-last-child(4) {
+    margin-left: 100px;
+}
+
+.margin-left {
+    margin-left: 100px;
+}
+
+.seatLayout:nth-child(2),
+.seatLayout:nth-child(8) {
+    margin-bottom: 50px;
+}
+
+.material-icons {
+    // font-size: 100px;
+    // font-weight: 400 !important;
+}
+
+mat-icon {
+    // height: 100%;
+    // width: 100px;
+    // cursor: pointer;
+}
+
+.seatNavContainer {
+    display: flex;
+    align-items: center;
+    // width: 100%;
+    padding: 20px;
+}
+
+.rowContainer {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeContainer {
+    display: flex;
+    margin-left: 48px;
+    gap: 20px;
+
+    div {
+        border: 1px solid #2dc492;
+        border-radius: 4px;
+
+        div {
+            padding: 5px;
+            color: #2dc492;
+        }
+    }
+}
+
+.closeIcon {
+    // height: 30px;
+    width: 40px;
+}
+
+.amtButton {
+    width: 20%;
+    background: #f84464;
+    color: white;
+    border-radius: 5px;
+    border: #f84464;
+    padding: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    // background-color: ;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.staticContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.arrow {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.editIcon {
+    width: 20px;
+    // display: flex;
+}
+
+.editor {
+    display: flex;
+    gap: 10px;
+
+}
+.timer{
+    padding: 5px 0px;
+    background: #f5f5fa;
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .wholeContains,
+    .seatLayout,
+    .timer {
+        // width: 80rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .seatNavContainer {}
+}

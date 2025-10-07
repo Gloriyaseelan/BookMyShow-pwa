@@ -1,0 +1,35 @@
+<div class="container-fluid wholeContainer" style="background-color: black;">
+    <div class="container ">
+        <div class="movieContainer">
+            <div class="wraper " *ngFor="let data of displayMovie">
+                <div class="movieImg">
+                    <img class="recImage" src={{data.src}} alt="">
+                </div>
+                <div class="movieContent">
+                    <div class=" p-3">
+                        <h3>{{data.title}}</h3>
+                    </div>
+                    <div class="rate p-3">
+                        <div>
+                            <mat-icon class="" style="color: red;">star</mat-icon>
+                        </div>
+                        <div>
+                            <span class=" text-center">{{data.ratings}}/10</span>
+                        </div>
+                        <div>
+                            <span class=""><button mat-raised-button (click)="rate()">Rate now</button> </span>
+                        </div>
+                    </div>
+                    <div class="time p-3">
+                        <div class="">{{data.duration}}</div>
+                        <div class="">{{data.genre}}</div>
+                    </div>
+                    <div class=" p-3">
+                        <button class=" bookTicket" (click)="ticketBooking(data.id)" mat-raised-button>Book
+                            tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
